@@ -14,8 +14,9 @@ function onFormSubmit(event) {
         alert("All fields must be filled in");
     } else {
         console.log(formData);
+        event.currentTarget.reset();
     }
-    event.currentTarget.reset();
+
 };
 
 form.addEventListener('submit', onFormSubmit);
